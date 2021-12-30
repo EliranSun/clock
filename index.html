@@ -1,0 +1,39 @@
+<style>
+  .clock-layout {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+
+  .clock {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 50vh;
+    display: flex;
+    position: absolute;
+  }
+
+  .seconds-hand,
+  .minutes-hand,
+  .hours-hand {
+    position: fixed;
+    transform-origin: 0% 0%;
+    left: 50%;
+    display: flex;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+  }
+</style>
+
+<div class="clock-layout">
+</div>
+<div class="clock">
+  <div class="seconds-hand"></div>
+  <div class="minutes-hand"></div>
+  <div class="hours-hand">
+  </div>
+</div>
+
+<script src='./legacy.js'></script>
